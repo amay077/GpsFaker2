@@ -57,17 +57,21 @@
                     android:layout_height="wrap_content"
                     android:layout_width="fill_parent"
                     android:text="Play GPS Log"
+                    android:enabled="@{viewModel.canStart}"
                     android:onClick="@{viewModel.onClickPlay}"/>
                 <Button
                     android:id="@+id/ButtonPause"
                     android:layout_height="wrap_content"
                     android:layout_width="fill_parent"
-                    android:text="Pause" />
+                    android:text="Pause"
+                    android:enabled="@{viewModel.canPause}"
+                    android:onClick="@{viewModel.onClickPause}"/>
                 <Button
                     android:id="@+id/ButtonStop"
                     android:layout_height="wrap_content"
                     android:layout_width="fill_parent"
                     android:text="Stop"
+                    android:enabled="@{viewModel.canStop}"
                     android:onClick="@{viewModel.onClickStop}"/>
                 <!--  <Button-->
                 <!--    android:id="@+id/ButtonDisableProvider"-->

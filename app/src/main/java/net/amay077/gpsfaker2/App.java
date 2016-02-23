@@ -21,4 +21,12 @@ public class App extends Application {
     public GpsSignalModel getGpsSignalModel() {
         return gpsSignalModel;
     }
+
+    @Override
+    public void onTerminate() {
+        if (gpsSignalModel != null && gpsSignalModel.isUnsubscribed()) {
+            gpsSignalModel.unsubscribe();
+        }
+        super.onTerminate();
+    }
 }

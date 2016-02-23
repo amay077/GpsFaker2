@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="providers">
+        <item>gps</item>
+        <item>network</item>
+    </string-array>
+    <string-array name="courses">
+        <item>example.gpx</item>
+        <item>20121211.gqlog</item>
+        <item>20121217.gqlog</item>
+        <item>chiba.gpx</item>
+        <item>kasugai_toyota.gpx</item>
+        <item>nagasaki.gpx</item>
+        <item>shiga.gpx</item>
+        <item>mt_fuji.gpx</item>
+    </string-array>
+</resources>

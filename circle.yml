@@ -6,7 +6,7 @@ machine:
 
 dependencies:
     override:
-        - echo y | android update sdk --no-ui --filter "android-23, build-tools-23.0.1" # デフォルトで導入されているパッケージは入れる必要なし。下記参照
+        - echo y | android update sdk --no-ui --filter "android-23, build-tools-23.0.2" # デフォルトで導入されているパッケージは入れる必要なし。下記参照
 test:
     override:
         - ./gradlew test
